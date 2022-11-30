@@ -5,19 +5,63 @@
   --p-color: #757575;
   --white-color: #ffffff;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
+  background-color: #e5e5e5;
+  margin: 0;
 }
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.main-page {
+  width: 1600px;
+  height: 2349px;
+  background-color: var(--white-color);
+  margin: 0 auto;
+}
+
+.portfolio-page {
+  width: 1600px;
+  height: 1880px;
+  background-color: var(--white-color);
+  margin: 0 auto;
+}
+
 .list {
   list-style-type: none;
 }
+
+.menu-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding-left: 215px;
 }
 .first-part-logo {
   color: var(--brand-color);
@@ -32,9 +76,7 @@ body {
   letter-spacing: 0.02em;
   background-color: var(--white-color);
 }
-.menu:hover {
-  color: var(--brand-color);
-}
+
 .menu.menu-nav {
   text-transform: uppercase;
 }
@@ -42,7 +84,12 @@ body {
   text-decoration: none;
   cursor: pointer;
   color: var(--text-color);
+  padding-right: 46px;
 }
+.box:first-child {
+  padding-left: 93px;
+}
+
 .menu-nav:hover {
   color: var(--brand-color);
 }
@@ -51,6 +98,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   color: var(--p-color);
+  padding-left: 371px;
 }
 .menu-mail:hover {
   color: var(--brand-color);
@@ -60,6 +108,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   color: var(--p-color);
+  padding-left: 50px;
 }
 .menu-phone:hover {
   color: var(--brand-color);
@@ -70,42 +119,51 @@ body {
   color: #ececec;
 }
 
-.primarys {
+.primary {
   background-color: var(--bg-color);
+  text-align: center;
+  height: 600px;
+  margin: 0;
+  border: 1px solid transparent;
 }
 .primary-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  padding: 200px 452px 30px;
+  letter-spacing: 0.06em;
 }
 .primary-bg {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
+  border-style: none;
   background-color: #f5f4fa;
+  width: 200px;
+  height: 50px;
 }
 .primary-bg:hover {
   background-color: var(--brand-color);
   color: var(--white-color);
+  border-style: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-.feature.title {
+.feature {
+  display: flex;
+}
+/*tekst*/
+.feature-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 .feature-section {
   color: (--p-color);
@@ -144,20 +202,26 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  padding-left: 24px;
 }
 .team-job,
 .portfolio-job {
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--p-color);
+  padding-left: 24px;
 }
+
+/*stopka*/
 .contact {
   background-color: var(--bg-color);
+  display: block;
+}
+.contact-list {
+  list-style-type: none;
 }
 .contact-data {
   text-decoration: none;
@@ -180,11 +244,15 @@ body {
 .portfolios {
   background-color: var(--white-color);
   text-align: center;
-  border: 1px solid #eeeeee;
 }
 .portfolio-card {
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-bottom: 28px;
 }
 .filter {
   border-radius: 4px;
@@ -200,8 +268,12 @@ body {
   background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  border-style: none;
 }
 .filter-bg:hover {
   background-color: var(--brand-color);
   color: var(--white-color);
+  border-style: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
