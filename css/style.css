@@ -10,7 +10,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
   background-color: #e5e5e5;
-  margin: 0;
 }
 
 *,
@@ -20,21 +19,24 @@ body {
 }
 
 .main-page {
-  width: 1600px;
-  height: 2349px;
+  max-width: 1600px;
+  max-height: 2349px;
   background-color: var(--white-color);
   margin: 0 auto;
 }
 
 .portfolio-page {
-  width: 1600px;
-  height: 1880px;
+  max-width: 1600px;
+  max-height: 1880px;
   background-color: var(--white-color);
-  margin: 0 auto;
 }
 
 .list {
   list-style-type: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .menu-box {
@@ -61,8 +63,6 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin: 0;
-  padding-left: 215px;
 }
 .first-part-logo {
   color: var(--brand-color);
@@ -100,6 +100,7 @@ body {
   cursor: pointer;
   color: var(--p-color);
   padding-left: 371px;
+  padding-right: 40px;
 }
 .menu-mail:hover {
   color: var(--brand-color);
@@ -109,12 +110,10 @@ body {
   font-weight: 500;
   cursor: pointer;
   color: var(--p-color);
-  padding-left: 50px;
 }
 .menu-phone:hover {
   color: var(--brand-color);
 }
-
 
 .primary {
   background-color: var(--bg-color);
@@ -152,10 +151,16 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+/*tekst*/
 .feature {
   display: flex;
+  gap: 30px;
 }
-/*tekst*/
+
+.feature-box {
+}
+
 .feature-title {
   font-weight: 700;
   font-size: 14px;
@@ -176,7 +181,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+/*zespół*/
 .team {
   background-color: #f5f4fa;
   text-align: center;
@@ -201,7 +206,6 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  padding-left: 24px;
 }
 .team-job,
 .portfolio-job {
@@ -209,14 +213,14 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--p-color);
-  padding-left: 24px;
 }
 
 /*stopka*/
 .contact {
   background-color: var(--bg-color);
-  display: block;
+  height: 252px;
 }
+
 .contact-list {
   list-style-type: none;
 }
@@ -238,6 +242,7 @@ body {
   text-decoration: none;
 }
 
+/*portfolio*/
 .portfolios {
   background-color: var(--white-color);
   text-align: center;
@@ -249,7 +254,6 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   box-sizing: border-box;
-  margin-bottom: 28px;
 }
 .filter {
   border-radius: 4px;
