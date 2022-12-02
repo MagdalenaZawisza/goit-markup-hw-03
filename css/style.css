@@ -12,6 +12,9 @@ body {
   background-color: #e5e5e5;
 }
 
+header {
+  border: 1px solid #ececec;
+}
 *,
 ::after,
 ::before {
@@ -29,6 +32,7 @@ body {
   max-width: 1600px;
   max-height: 1880px;
   background-color: var(--white-color);
+  margin: 0 auto;
 }
 
 .list {
@@ -37,6 +41,8 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0;
+  /* outline: 1px dotted darkgray; */
 }
 
 .menu-box {
@@ -48,13 +54,13 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  border: 1px solid transparent;
 }
 
 .box {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .logo {
@@ -119,7 +125,6 @@ body {
   background-color: var(--bg-color);
   text-align: center;
   height: 600px;
-  margin: 0;
   border: 1px solid transparent;
 }
 .primary-title {
@@ -155,10 +160,8 @@ body {
 /*tekst*/
 .feature {
   display: flex;
+  justify-content: flex-start;
   gap: 30px;
-}
-
-.feature-box {
 }
 
 .feature-title {
@@ -166,6 +169,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .feature-section {
   color: (--p-color);
@@ -174,17 +178,25 @@ body {
   letter-spacing: 0.03em;
 }
 
+.tender {
+  padding-bottom: 94px;
+}
 .tender-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0;
 }
+
 /*zespół*/
 .team {
   background-color: #f5f4fa;
   text-align: center;
+  padding-bottom: 94px;
 }
 .team-card {
   background-color: var(--white-color);
@@ -198,6 +210,9 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0;
 }
 .team-name,
 .portfolio-name {
@@ -216,13 +231,19 @@ body {
 }
 
 /*stopka*/
+
 .contact {
   background-color: var(--bg-color);
   height: 252px;
 }
 
+.contact-box {
+  padding-top: 4%;
+}
+
 .contact-list {
   list-style-type: none;
+  padding-left: 0;
 }
 .contact-data {
   text-decoration: none;
@@ -231,6 +252,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-top: 20px;
 }
 .contact-mail,
 .contact-phone {
@@ -243,22 +265,13 @@ body {
 }
 
 /*portfolio*/
-.portfolios {
-  background-color: var(--white-color);
-  text-align: center;
-}
-.portfolio-card {
-  background-color: var(--white-color);
-  border-radius: 0px 0px 4px 4px;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
+
 .filter {
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .filter-bg {
   font-family: inherit;
@@ -270,6 +283,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border-style: none;
+  width: 121px;
+  height: 38px;
+  padding-right: 8px;
 }
 .filter-bg:hover {
   background-color: var(--brand-color);
@@ -277,4 +293,24 @@ body {
   border-style: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio {
+  background-color: var(--white-color);
+  text-align: center;
+}
+.portfolio-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+  gap: 30px;
+}
+.portfolio-card {
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
 }
