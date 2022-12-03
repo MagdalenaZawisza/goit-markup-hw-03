@@ -9,31 +9,18 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
 }
 
 header {
   border: 1px solid #ececec;
 }
-*,
+
+/* *,
 ::after,
 ::before {
   box-sizing: border-box;
-}
-
-.main-page {
-  max-width: 1600px;
-  max-height: 2349px;
-  background-color: var(--white-color);
-  margin: 0 auto;
-}
-
-.portfolio-page {
-  max-width: 1600px;
-  max-height: 1880px;
-  background-color: var(--white-color);
-  margin: 0 auto;
-}
+} */
 
 .list {
   list-style-type: none;
@@ -43,7 +30,7 @@ header {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px 0 15px;
 }
 
 .menu-box {
@@ -55,13 +42,23 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  justify-content: space-between;
+}
+.first-menu-box {
+  display: flex;
+  align-items: center;
+}
+.second-menu-boc {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
 }
 
 .box {
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .logo {
@@ -83,7 +80,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   background-color: var(--white-color);
-  padding-left: 93px;
+  margin-left: 93px;
 }
 
 .menu.menu-nav {
@@ -93,7 +90,7 @@ header {
   text-decoration: none;
   cursor: pointer;
   color: var(--text-color);
-  padding-right: 46px;
+  margin-right: 46px;
 }
 
 .menu-nav:hover {
@@ -104,8 +101,7 @@ header {
   text-decoration: none;
   cursor: pointer;
   color: var(--p-color);
-  padding-left: 371px;
-  padding-right: 40px;
+  margin-right: 50px;
 }
 .menu-mail:hover {
   color: var(--brand-color);
@@ -132,9 +128,7 @@ header {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--white-color);
-  padding-left: 452px;
-  padding-right: 452px;
-  padding-bottom: 30px;
+  margin: auto;
   letter-spacing: 0.06em;
   text-align: center;
 }
@@ -148,8 +142,9 @@ header {
   border-radius: 4px;
   border-style: none;
   background-color: #f5f4fa;
-  width: 200px;
-  height: 50px;
+  padding: 10px 41px;
+  margin-top: 30px;
+
 }
 .primary-bg:hover {
   background-color: var(--brand-color);
