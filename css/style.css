@@ -10,27 +10,24 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
   background-color: var(--white-color);
+  margin: 0;
 }
 
 header {
   border: 1px solid #ececec;
 }
 
-/* *,
-::after,
-::before {
-  box-sizing: border-box;
-} */
-
 .list {
   list-style-type: none;
-  padding: 0;
+  display: flex;
   margin: 0;
+  padding: 0;
+  gap: 30px;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 }
 
 .menu-box {
@@ -47,18 +44,12 @@ header {
 .first-menu-box {
   display: flex;
   align-items: center;
-}
-.second-menu-boc {
-  display: flex;
   justify-content: space-between;
-  padding-left: 50px;
 }
 
-.box {
+.second-menu-box {
   display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -67,6 +58,7 @@ header {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .first-part-logo {
   color: var(--brand-color);
@@ -80,7 +72,6 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   background-color: var(--white-color);
-  margin-left: 93px;
 }
 
 .menu.menu-nav {
@@ -90,7 +81,6 @@ header {
   text-decoration: none;
   cursor: pointer;
   color: var(--text-color);
-  margin-right: 46px;
 }
 
 .menu-nav:hover {
@@ -131,6 +121,7 @@ header {
   margin: auto;
   letter-spacing: 0.06em;
   text-align: center;
+  max-width: 696px;
 }
 .primary-bg {
   font-family: inherit;
@@ -144,7 +135,6 @@ header {
   background-color: #f5f4fa;
   padding: 10px 41px;
   margin-top: 30px;
-
 }
 .primary-bg:hover {
   background-color: var(--brand-color);
@@ -155,7 +145,7 @@ header {
 }
 
 /*tekst*/
-.feature {
+.feature-box {
   display: flex;
   gap: 30px;
   padding-top: 94px;
@@ -176,8 +166,10 @@ header {
   letter-spacing: 0.03em;
 }
 
+/* oferta */
 .tender {
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .tender-title {
   font-weight: 700;
@@ -185,9 +177,6 @@ header {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
-  padding-bottom: 50px;
-  margin: 0;
 }
 
 /*zespół*/
@@ -265,6 +254,7 @@ header {
 /*portfolio*/
 
 .filter {
+  display: flex;
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -295,7 +285,6 @@ header {
 
 .portfolio {
   background-color: var(--white-color);
-  text-align: center;
 }
 .portfolio-box {
   display: flex;
