@@ -113,6 +113,7 @@ header {
   border: 1px solid transparent;
 }
 .primary-title {
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -121,7 +122,6 @@ header {
   margin: auto;
   letter-spacing: 0.06em;
   text-align: center;
-  max-width: 696px;
 }
 .primary-bg {
   font-family: inherit;
